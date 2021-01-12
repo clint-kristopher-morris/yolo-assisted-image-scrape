@@ -5,5 +5,5 @@ Bing image scraper curated by deep learning
 Link to Darknet: https://github.com/AlexeyAB/darknet
 Label Images: https://github.com/alexismailov2/yolo-labeling-tool
 
-https://gph.is/g/E0QlDwV
+![alt text](https://gph.is/g/E0QlDwV)
 
