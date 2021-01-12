@@ -1,2 +1,5 @@
 # yolo-assisted-image-scrape
-Scrapes images from Bing curated by deep learning
+Bing image scraper curated by deep learning
+
+# 1) Create yoloV3/V4 Darknet Weights 
+Link to Darknet: https://github.com/AlexeyAB/darknet
