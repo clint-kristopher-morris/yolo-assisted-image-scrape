@@ -3,6 +3,8 @@ Bing image scraper curated by deep learning. I created this repo for mass data c
 
 # Goal: Collect mass data that can be used to assign freight trucks to their respective FHAW classification.
 
+![](https://i.ibb.co/rQCWHkY/classes2.jpg)
+
 Due to the reduced effort required to train a SCAN model it is advantageous to collect mass data for model training. This repo uses a simple yolo model trained to 600 images to curate data collection. 
 
 
