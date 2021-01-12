@@ -6,4 +6,5 @@ Link to Darknet: https://github.com/AlexeyAB/darknet
 Label Images: https://github.com/alexismailov2/yolo-labeling-tool
 
 ![alt text](https://gph.is/g/E0QlDwV)
+![](https://media3.giphy.com/media/apWnL996NJojmc0ROd/giphy.gif)
 
