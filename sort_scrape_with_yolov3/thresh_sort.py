@@ -45,6 +45,8 @@ def yolo_sort(obj_path,tf_weights,num_classes,tiny=False,thresh=0.85):
 
     non_sorted = 'data/raw_im'
     sorted_path = 'data/sorted'
+    if not os.path.exists(sorted_path):
+        os.makedirs(sorted_path)
     for img_lo in os.listdir(non_sorted):
         try:
             img_in = cv2.imread(f'{non_sorted}/{img_lo}')
@@ -72,7 +74,7 @@ def yolo_sort(obj_path,tf_weights,num_classes,tiny=False,thresh=0.85):
         detections = [detections[i] for i in indices]
 
         for detection in detections:
-            print(f'im: {img_lo}  confidence: {detection.confidence}')
+            #print(f'im: {img_lo}  confidence: {detection.confidence}')
             if detection.confidence > thresh:
                 try:
                     shutil.move(f'{non_sorted}/{img_lo}', f'{sorted_path}/{img_lo}')

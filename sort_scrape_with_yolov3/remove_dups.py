@@ -11,7 +11,6 @@ def drop_duplicates():
         os.makedirs(dupfolder)
     totalfiles = os.listdir(files)
     for file in os.listdir(files):
-        print(file)
         if file in dup:
             continue
         im1 = cv2.imread(f'{files}/{file}')

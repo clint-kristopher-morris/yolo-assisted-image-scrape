@@ -2,8 +2,12 @@ import imageio
 import imgaug as ia
 import os
 import cv2
+from imgaug import augmenters as iaa
+import numpy as np
+from termcolor import colored
 
 def im_aug(num_im,angle,blur,color_var,path='data/sorted',outfile='data/aug_data'):
+    print(colored(f'Generating {num_im} Augmented Images for Every Item Scraped','blue'))
     seq = iaa.Sequential([
         iaa.Affine(rotate=(-angle, angle)),
         iaa.AdditiveGaussianNoise(scale=(0, blur)),
@@ -17,8 +21,6 @@ def im_aug(num_im,angle,blur,color_var,path='data/sorted',outfile='data/aug_data
         image = imageio.imread(f'{path}/{file}')
         images = [image]*num_im
         images_aug = seq(images=images)
-        print("Augmented:")
-        ia.imshow(np.hstack(images_aug))
         i=0
         name = file.replace('.jpg','')
         for aug in images_aug:
