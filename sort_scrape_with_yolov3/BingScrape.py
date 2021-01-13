@@ -10,11 +10,12 @@ from thresh_sort import yolo_sort
 from remove_dups import drop_duplicates
 from augment import im_aug
 
-flags.DEFINE_string('searches', ['trucks'], 'list of searches')
+flags.DEFINE_string('searches', 'trucks * semi trucks', 'list of searches separated by *')
 flags.DEFINE_string('aug', True, 'augment_images')
 
 def main(_argv):
     words = FLAGS.searches
+    words.split('*')
     # Finds images from scrolling Bing
     def find_af_scroll(all_images):
         #Turns driver into soup
