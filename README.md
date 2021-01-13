@@ -32,15 +32,20 @@ Example of how to scrape results for "freight trucks" and "semi/trucks":
 
 python BingScrape.py --searches freight-trucks*semi-trucks --aug 5
 
+
 This process will:
  - Use the discriminator to remove all images that fall below a threshold. Set this value high!
- - Remove dupicate images.
+ - Remove duplicate images.
  - Generate image augmentations for additional data.
 
 # Results
 Example of removed images:
 
+![](https://i.ibb.co/HtKM7qd/Removedsm.png)
+
 Example of selected images:
+
+Example of augmentations of a single image:
 
 On my test set of 100k images, 60k were removed by the discriminator.
 
