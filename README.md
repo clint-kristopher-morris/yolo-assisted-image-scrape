@@ -45,7 +45,11 @@ Example of removed images:
 
 Example of selected images:
 
+![](https://i.ibb.co/b698w21/sortedsm.png)
+
 Example of augmentations of a single image:
+
+![](https://i.ibb.co/Tct17xw/augsmall.png)
 
 On my test set of 100k images, 60k were removed by the discriminator.
 
