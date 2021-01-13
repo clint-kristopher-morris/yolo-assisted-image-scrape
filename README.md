@@ -16,7 +16,7 @@ Example of images not useful for model training:
 Advantageously, the tractor or front portion of the truck is common among most FHAW classes. I created a simple yolo model trained on only 300 images to act as a discriminator to filter out non truck images from the scraped data set. Scraping search results also enables me to target uncommon classes such as “Tractor B-train Double Trailers”. After collecting and sorting, I then made a model to remove duplicates and pad data by augmenting each image across 3 factors (rotation, noise, color).
 
 
-# 1) Create yoloV3/V4 Darknet Weights for discriminator model
+# 1) Create yoloV3/V4 Darknet Weights for Discriminator Model
 
 Label Images with this tool: https://github.com/alexismailov2/yolo-labeling-tool
 
@@ -26,5 +26,21 @@ Link to Darknet: https://github.com/AlexeyAB/darknet
 
 I recommend [“the AI Guy”]( https://github.com/theAIGuysCode?tab=repositories) for the fastest way to learn how to train a custom darknet YOLO model. I also Implemented his method of converting YOLO weights to TensorFlow.
 
+# 2) Run BingScrape.py to Collect Data
 
+Example of how to scrape results for "freight trucks" and "semi/trucks": 
+
+python BingScrape.py --searches freight-trucks*semi-trucks --aug 5
+
+This process will:
+ - Use the discriminator to remove all images that fall below a threshold. Set this value high!
+ - Remove dupicate images.
+ - Generate image augmentations for additional data.
+
+# Results
+Example of removed images:
+
+Example of selected images:
+
+On my test set of 100k images, 60k were removed by the discriminator.
 
