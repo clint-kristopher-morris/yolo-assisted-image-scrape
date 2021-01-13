@@ -15,6 +15,7 @@ flags.DEFINE_string('aug', True, 'augment_images')
 
 def main(_argv):
     words = FLAGS.searches
+    words = words.replace('-',' ')
     words.split('*')
     # Finds images from scrolling Bing
     def find_af_scroll(all_images):
