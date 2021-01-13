@@ -10,7 +10,7 @@ from thresh_sort import yolo_sort
 from remove_dups import drop_duplicates
 from augment import im_aug
 
-flags.DEFINE_string('searches', 'trucks', 'list of searches')
+flags.DEFINE_string('searches', ['trucks'], 'list of searches')
 flags.DEFINE_string('aug', True, 'augment_images')
 
 def main(_argv):
