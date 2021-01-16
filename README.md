@@ -51,6 +51,7 @@ Example of augmentations of a single image:
 ![](https://i.ibb.co/Tct17xw/augsmall.png)
 
 On my test set of 100k images, 60k were removed by the discriminator.
+The image on the left shows a representative sample of class types passing this station. The disproportionality of this dataset is apparent which, creates issues when trying to develop a model that can accurately predict rare classes. The figure on the left shows how targeted scraping can be employed to collect scarce class types on a large scale.  
 
 ![](https://i.ibb.co/TrgcY7r/nat-dis.png) 
 ![](https://i.ibb.co/LSskgP0/targeted.png)
