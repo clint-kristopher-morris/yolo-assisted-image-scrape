@@ -52,5 +52,6 @@ Example of augmentations of a single image:
 
 On my test set of 100k images, 60k were removed by the discriminator.
 
-![](https://i.ibb.co/TrgcY7r/nat-dis.png) ![](https://ibb.co/WnRxz3H)
+![](https://i.ibb.co/TrgcY7r/nat-dis.png) 
+![](https://ibb.co/WnRxz3H)
 
