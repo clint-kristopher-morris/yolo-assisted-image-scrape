@@ -15,7 +15,6 @@ Example of images not useful for model training:
 
 Advantageously, the tractor or front portion of the truck is common among most FHAW classes. I created a simple yolo model trained on only 300 images to act as a discriminator to filter out non truck images from the scraped data set. Scraping search results also enables me to target uncommon classes such as “Tractor B-train Double Trailers”. After collecting and sorting, I then made a model to remove duplicates and pad data by augmenting each image across 3 factors (rotation, noise, color).
 
-
 # 1) Create yoloV3/V4 Darknet Weights for Discriminator Model
 
 Label Images with this tool: https://github.com/alexismailov2/yolo-labeling-tool
@@ -52,4 +51,6 @@ Example of augmentations of a single image:
 ![](https://i.ibb.co/Tct17xw/augsmall.png)
 
 On my test set of 100k images, 60k were removed by the discriminator.
+
+![](https://i.ibb.co/TrgcY7r/nat-dis.png)![](https://ibb.co/WnRxz3H)
 
