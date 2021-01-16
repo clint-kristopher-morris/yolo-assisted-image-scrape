@@ -63,7 +63,9 @@ The image on the left shows a representative sample of class types passing this 
 To reduces monotonous work, I have also created a method of generating both images and YOLO formatted label simultaneously. Select your labeled image set and using the function below, to generate additional augmented data and labels.
 
 ```
-khkhkklhklkjl
+from augment import im_aug_transpose_labels
+
+im_aug_transpose_labels(num_im,angle,blur,color_var,path='data/sorted',outfile='data/aug_data')
 ```
 
 ![](https://media1.giphy.com/media/gTKVJJZTNta6vHatvB/giphy.gif)
