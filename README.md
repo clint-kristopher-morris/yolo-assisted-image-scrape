@@ -58,4 +58,14 @@ The image on the left shows a representative sample of class types passing this 
 
 # Additional Yolo Relate Features  
 
+### Transpose Labels Across Augmentations
+
+To reduces monotonous work, I have also created a method of generating both images and YOLO formatted label simultaneously. Select your labeled image set and using the function below, to generate additional augmented data and labels.
+
+'''
+khkhkklhklkjl
+'''
+
+![](https://media1.giphy.com/media/gTKVJJZTNta6vHatvB/giphy.gif)
+
 
