@@ -29,8 +29,9 @@ I recommend [“the AI Guy”]( https://github.com/theAIGuysCode?tab=repositorie
 
 Example of how to scrape results for "freight trucks" and "semi/trucks": 
 
+```
 python BingScrape.py --searches freight-trucks*semi-trucks --aug 5
-
+```
 
 This process will:
  - Use the discriminator to remove all images that fall below a threshold. Set this value high!
